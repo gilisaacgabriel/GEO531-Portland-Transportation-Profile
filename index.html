@@ -27,13 +27,17 @@
 					 ## Introduction
 					The Portland Metropolitan Statistical Area is home to 2.5 million residents. 
 					
-					
 					In this webapp, I [@CensusBureau2022]. 
 					 </textarea>	
 				</section>
-				<section>
-					<iframe width="100%" height="100%" src="https://datausa.io/profile/geo/portland-vancouver-hillsboro-or-wa/demographics/race_and_ethnicity?viz=true" frameborder="0" ></iframe>
+				<section data-background-iframe="https://data.census.gov/map/310XX00US38900/ACSST5Y2022/S0802?q=Commute&t=Commuting&layer=VT_2022_310_M7_PY_D1&loc=45.8189,-121.8868,z7.8302" data-background-interactive></section>>
+					<!-- <iframe width="1920" height="1080" data-src="https://datausa.io/profile/geo/portland-vancouver-hillsboro-or-wa" frameborder="0" ></iframe> -->
 					<!-- <iframe data-src="https://datausa.io/profile/geo/portland-vancouver-hillsboro-or-wa" height= "100%" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> -->
+				</section>
+				<section data-background-iframe="https://data.census.gov/vizwidget?g=310XX00US38900&infoSection=Age and Sex"></section>
+
+				<section>
+					<a href="https://www.statista.com/statistics/183600/population-of-metropolitan-areas-in-the-us/" rel="nofollow"><img src="https://www.statista.com/graphic/1/183600/population-of-metropolitan-areas-in-the-us.jpg" alt="Statistic: Population of the largest metropolitan areas in the United States in 2022 | Statista" style="width: 100%; height: auto !important; max-width:1000px;-ms-interpolation-mode: bicubic;"/></a><br />Find more statistics at  <a href="https://www.statista.com" rel="nofollow">Statista</a>
 				</section>
 			</div>
 		</div>
@@ -49,6 +53,7 @@
 			Reveal.initialize({
 				hash: true,
 				view: 'scroll',
+				scrolllayout: 'compact',
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
