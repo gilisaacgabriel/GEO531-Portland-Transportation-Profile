@@ -2,9 +2,15 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
 
-		<title>reveal.js</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Portland Metropolitan Transportation Assessment</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -16,7 +22,15 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
+				<section data-markdown>
+					<textarea data-template></textarea>
+					 ## Introduction
+					The Portland Metropolitan Statistical Area is home to 2.5 million residents. 
+					<iframe data-src="https://datausa.io/profile/geo/portland-vancouver-hillsboro-or-wa"></iframe>
+					
+					In this webapp, I [@CensusBureau2022]. 
+					 </textarea>	
+				</section>
 				<section>Slide 2</section>
 			</div>
 		</div>
@@ -31,7 +45,7 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+				view: 'scroll'
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
